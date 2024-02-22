@@ -9,6 +9,8 @@ using object-oriented programming and comparing the performance of various algor
 * XGBoost
 * Random Forest
 * CatBoost
+* Gradient Boost
+* AdaBoost
 
 // Key Features
 * **OOP Design:** Clear, maintainable, and reusable code
@@ -22,17 +24,6 @@ using object-oriented programming and comparing the performance of various algor
 2. Install dependencies: `pip install -r requirements.txt`
 
 // Usage
-1. Prepare your dataset (supported formats: CSV, XGBoost DMatrix)
+1. Prepare your dataset (supported formats: CSV, XGBoost DMatrix) in pandas datframe format
 2. Run the pipeline:
 
-```dm
-from pipeline import ClassificationPipeline
-
-pipeline = ClassificationPipeline(
-    data_path = "path/to/your/dataset.csv",
-    target_column = "target_column_name",
-    algorithms = ["xgboost", "random_forest", "catboost"],
-    report_path = "results.txt"
-)
-
-pipeline.run()
